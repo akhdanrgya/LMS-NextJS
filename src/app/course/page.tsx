@@ -7,8 +7,8 @@ const Course = () => {
           </h1>
   
           <div className="gap-8 flex">
-            <a className="font-mono hover:text-blue-800 cursor-pointer text-xl mb-4">My Courses</a>
-            <a className="font-mono hover:text-blue-800 cursor-pointer  text-xl mb-4">All Courses</a>
+            <a className="font-mono hover:text-blue-800 cursor-pointer text-lg mb-4">My Courses</a>
+            <a className="font-mono hover:text-blue-800 cursor-pointer  text-lg mb-4">All Courses</a>
           </div>
 
           <div className="bg-gray-100 p-4 mb-8">
