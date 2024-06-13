@@ -1,32 +1,24 @@
 const Home = () => {
   return (
-    <main>
-      <div className="px-80 py-20">
-        <div className="">
-          <h1 className="text-2xl font-mono">
-            WELCOME BACK AKHDAN ANARGYA ARISADI
-          </h1>
+    <main className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-2xl font-mono mb-8">
+          WELCOME BACK AKHDAN ANARGYA ARISADI
+        </h1>
 
-          <div className="bg-gray-100 p-4 my-10">
-            <h1 className="font-mono text-xl">Latest announcements</h1>
-            <div>
-              <p>belum ada</p>
-            </div>
-          </div>
+        <div className="bg-gray-100 p-4 mb-8">
+          <h2 className="font-mono text-xl mb-4">Latest announcements</h2>
+          <p>belum ada</p>
+        </div>
 
-          <div className="bg-gray-100 p-4 my-10">
-            <h1 className="font-mono text-xl">Timeline</h1>
-            <div>
-              <p>belum ada juga</p>
-            </div>
-          </div>
+        <div className="bg-gray-100 p-4 mb-8">
+          <h2 className="font-mono text-xl mb-4">Timeline</h2>
+          <p>belum ada juga</p>
+        </div>
 
-          <div className="bg-gray-100 p-4 my-10">
-            <h1 className="font-mono text-xl">Course</h1>
-            <div>
-              <p>belum ada juga</p>
-            </div>
-          </div>
+        <div className="bg-gray-100 p-4 mb-8">
+          <h2 className="font-mono text-xl mb-4">Course</h2>
+          <p>belum ada juga</p>
         </div>
       </div>
     </main>
