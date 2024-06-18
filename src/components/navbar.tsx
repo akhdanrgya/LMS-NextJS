@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -54,9 +55,9 @@ const Navbar: React.FC = () => {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a href="/" className={path == '/' ? `rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white` : `rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white`}>Home</a>
-                <a href="/course" className={path == '/course' ? `rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white` : `rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white`}>Course</a>
-                <a href="/explore" className={path == '/explore' ? `rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white` : `rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white`}>Exolore</a>
+                <Link href="/" className={path == '/' ? `rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white` : `rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white`}>Home</Link>
+                <Link href="/course" className={path == '/course' ? `rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white` : `rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white`}>Course</Link>
+                <Link href="/explore" className={path == '/explore' ? `rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white` : `rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white`}>Exolore</Link>
               </div>
             </div>
           </div>
@@ -106,9 +107,9 @@ const Navbar: React.FC = () => {
                 aria-labelledby="user-menu-button" 
                 tabIndex={-1}
               >
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-0">Your Profile</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-1">Settings</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-2">Sign out</a>
+                <Link href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-0">Your Profile</Link>
+                <Link href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-1">Settings</Link>
+                <Link href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-2">Sign out</Link>
               </div>
             </div>
           </div>
@@ -116,7 +117,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`sm:hidden ${menuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
+      <div className={`${menuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <a href="/" className={path == '/' ? `block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white` : "block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"}>Home</a>
           <a href="/course" className={path == '/course' ? `block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white` : "block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"}>Course</a>
