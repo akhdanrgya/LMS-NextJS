@@ -119,8 +119,8 @@ const Navbar: React.FC = () => {
       <div className={`sm:hidden ${menuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <a href="/" className={path == '/' ? `block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white` : "block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"}>Home</a>
-          <a href="/course" className={path == '/' ? `block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white` : "block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"}>Course</a>
-          <a href="/explore" className={path == '/' ? `block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white` : "block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"}>Explore</a>
+          <a href="/course" className={path == '/course' ? `block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white` : "block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"}>Course</a>
+          <a href="/explore" className={path == '/explore' ? `block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white` : "block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"}>Explore</a>
         </div>
       </div>
     </nav>
