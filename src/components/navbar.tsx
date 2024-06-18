@@ -47,11 +47,13 @@ const Navbar: React.FC = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
+              <Link href='/'>
               <img 
                 className="h-8 w-auto" 
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" 
-                alt="Your Company" 
-              />
+                alt="Your Company"
+                />
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -102,14 +104,11 @@ const Navbar: React.FC = () => {
               </div>
               <div 
                 className={`${profileOpen ? 'absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none' : 'hidden'}`}
-                role="menu" 
-                aria-orientation="vertical" 
-                aria-labelledby="user-menu-button" 
                 tabIndex={-1}
               >
-                <Link href="/onboarding/profile" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-0">Your Profile</Link>
-                <Link href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-1">Settings</Link>
-                <Link href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex={-1} id="user-menu-item-2">Sign out</Link>
+                <Link href="/onboarding/profile" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} id="user-menu-item-0">Your Profile</Link>
+                <Link href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} id="user-menu-item-1">Settings</Link>
+                <Link href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} id="user-menu-item-2">Sign out</Link>
               </div>
             </div>
           </div>
