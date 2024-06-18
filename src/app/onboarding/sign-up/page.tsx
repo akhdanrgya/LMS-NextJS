@@ -1,8 +1,8 @@
+import { SignUp } from "@clerk/nextjs"
+
 const Signup = () => {
     return (
-        <div>
-            Sign up
-        </div>
+        <SignUp/>
     )
 }
 
