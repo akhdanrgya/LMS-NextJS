@@ -5,11 +5,9 @@ import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
 import { Divider } from "@nextui-org/divider";
 import { Image } from "@nextui-org/image";
 import { Link } from "@nextui-org/link";
-import { useState } from "react";
-
-const addHandler = () => {};
 
 const MyCourse = () => {
+
   return (
     <div className="bg-gray-100 p-4 mb-8">
       <button className="font-mono hover:text-blue-800 cursor-pointer text-lg mb-4">

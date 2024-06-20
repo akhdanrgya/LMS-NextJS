@@ -1,3 +1,5 @@
+'use client'
+
 const AllCourse = () => {
     return (
         <div className="bg-gray-100 p-4 mb-8">

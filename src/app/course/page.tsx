@@ -7,8 +7,7 @@ import AllCourse from "./allCourse"
 
 const Course = () => {
   const [activeTab, setActiveTab] = useState("my")
-
-
+  
     return(
         <main className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-8">
         <div className="max-w-4xl mx-auto">
