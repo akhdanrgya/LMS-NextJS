@@ -11,6 +11,9 @@
   "dependencies": {
     "@clerk/nextjs": "^5.1.5",
     "@nextui-org/card": "^2.0.31",
+    "@nextui-org/divider": "^2.0.28",
+    "@nextui-org/image": "^2.0.29",
+    "@nextui-org/link": "^2.0.32",
     "@nextui-org/system": "^2.2.2",
     "@nextui-org/theme": "^2.2.6",
     "@prisma/client": "^5.15.1",
