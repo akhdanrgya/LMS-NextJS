@@ -1,6 +1,4 @@
-import axios from "axios"
-
-
+'use client'
 
 const Explore = () => {
     return(
